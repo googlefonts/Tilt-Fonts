@@ -1,7 +1,7 @@
 from fontTools.misc.bezierTools import splitCubicAtT
 
 
-baseFontPath = "../../fonts/TTF/"
+baseFontPath = "../../fonts/variable/"
 fontPaths = {
     "Neon": "Tilt-Neon.ttf",
     "Prism": "Tilt-Prism.ttf",

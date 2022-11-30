@@ -29,7 +29,7 @@ fi
 # FontMake ------------------------------------------------
 
 outputDir="fonts"
-mkdir -p "fonts/TTF"
+mkdir -p "fonts/variable"
 dsName=$(basename "$DS")
 fontName=${dsName/".designspace"/""}
 fontPath="$outputDir/TTF/$fontName.ttf"
