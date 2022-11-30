@@ -16,7 +16,7 @@ fileName = os.path.split(dsPath)[1]
 baseName = fileName.split(".")[0]
 pdfFileName = baseName + " Glyph Overview.pdf"
 HEADER_STYLENAME = baseName.replace("-", " ")
-HEADER_URL = "https://github.com/andyclymer/Tilt-Typeface"
+HEADER_URL = "https://github.com/googlefonts/Tilt-Fonts"
 
 ds = DesignSpaceProcessor(useVarlib=True)
 ds.read(dsPath)
