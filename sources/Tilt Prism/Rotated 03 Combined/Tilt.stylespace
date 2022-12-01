@@ -8,14 +8,14 @@
 
       <dict>
         <key>name</key>
-        <string>Horizontal Rotation</string>
+        <string>Rotation in X</string>
         <key>tag</key>
-        <string>HROT</string>
+        <string>XROT</string>
         <key>locations</key>
         <array>
           <dict>
             <key>name</key>
-            <string>Regular</string>
+            <string>Default</string>
             <key>value</key>
             <real>0</real>
           </dict>
@@ -24,14 +24,14 @@
 
       <dict>
         <key>name</key>
-        <string>Vertical Rotation</string>
+        <string>Rotation in Y</string>
         <key>tag</key>
-        <string>VROT</string>
+        <string>YROT</string>
         <key>locations</key>
         <array>
           <dict>
             <key>name</key>
-            <string>Regular</string>
+            <string>Default</string>
             <key>value</key>
             <real>0</real>
             <key>flags</key>

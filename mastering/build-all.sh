@@ -11,6 +11,6 @@
 # Run:
 # mastering/build-all.sh
 
-mastering/build.sh "sources/Tilt Neon/Rotated/TiltNeon[HROT,VROT].designspace"                   # Tilt Neon
-mastering/build.sh "sources/Tilt Prism/Rotated 03 Combined/TiltPrism[HROT,VROT].designspace"     # Tilt Prism
-mastering/build.sh "sources/Tilt Warp/Rotated/TiltWarp[HROT,VROT].designspace"                   # Tilt Warp
+mastering/build.sh "sources/Tilt Neon/Rotated/TiltNeon[XROT,YROT].designspace"                   # Tilt Neon
+mastering/build.sh "sources/Tilt Prism/Rotated 03 Combined/TiltPrism[XROT,YROT].designspace"     # Tilt Prism
+mastering/build.sh "sources/Tilt Warp/Rotated/TiltWarp[XROT,YROT].designspace"                   # Tilt Warp

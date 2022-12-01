@@ -32,7 +32,7 @@ outputDir="fonts"
 mkdir -p "fonts/variable"
 dsName=$(basename "$DS")
 fontName=${dsName/".designspace"/""}
-fontPath="$outputDir/TTF/$fontName.ttf"
+fontPath="$outputDir/variable/$fontName.ttf"
 stylespacePath=$(dirname "$DS")/Tilt.stylespace
 rm -f $fontPath
 
@@ -41,7 +41,7 @@ statmake --designspace "$DS" --stylespace "$stylespacePath" $fontPath
 
 gftools fix-nonhinting $fontPath $fontPath.fix
 mv $fontPath.fix $fontPath
-rm $outputDir/TTF/*backup*.ttf
+rm $outputDir/variable/*backup*.ttf
 gftools fix-dsig $fontPath -a -f
 
 # ---------------------------------------------------------
