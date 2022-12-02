@@ -18,6 +18,10 @@
             <string>Default</string>
             <key>value</key>
             <real>0</real>
+            <key>flags</key>
+            <array>
+              <string>ElidableAxisValueName</string>
+            </array>
           </dict>
         </array>
       </dict>
