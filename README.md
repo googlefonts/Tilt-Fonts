@@ -10,7 +10,7 @@ Tilt is a family of type inspired by the dimensional lettering found in storefro
 
 All three are based around the same letter model of a sign painter’s geometric sans serif, similar to the typefaces Futura or Avant Garde, but with the kinds of details you might expect to see when the letter is built up with a brush. 
 
-The three styles are designed and built as variable fonts. Instead of using variation axes that you would expect to find, such as “Weight” and “Width”, these typefaces allow users to rotate the orientation of their glyphs with “Horizontal Rotation” and “Vertical Rotation” axes. The rotation is limited to ±45° so that the letterforms never rotate past a readable range.
+The three styles are designed and built as variable fonts. Instead of using variation axes that you would expect to find, such as “Weight” and “Width”, these typefaces allow users to rotate the orientation of their glyphs with “Rotation in X” and “Rotation in Y” axes. The rotation is limited to ±45° so that the letterforms never rotate past a readable range.
 
 ![Tilt Neon](/images/Big-Neon-Abc.gif?raw=true "Tilt Neon")
 ![Tilt Prism](/images/Big-Prism-Abc.gif?raw=true "Tilt Prism")
@@ -38,8 +38,8 @@ A full outline of the OpenType features can be found in the [OpenType Feature Ov
 
 | Axis | Tag | Range | Default | Description |
 | :--- | :--- | :--- | :--- | :--- |
-| Horizontal Rotation | `HROT` | -45 to 45 | 0 | Horizontal rotation, in degrees |
-| Vertical Rotation | `VROT` | -45 to 45 | 0 | Vertical rotation, in degrees |
+| Rotation in X | `XROT` | -45 to 45 | 0 | Horizontal rotation, in degrees |
+| Rotation in Y | `YROT` | -45 to 45 | 0 | Vertical rotation, in degrees |
 
 ![Variable Sample](/images/VarSample.png?raw=true "Variable Sample")
 
