@@ -1,11 +1,11 @@
 from fontTools.misc.bezierTools import splitCubicAtT
 
 
-baseFontPath = "../../fonts/variable/"
+baseFontPath = "../fonts/variable/"
 fontPaths = {
-    "Neon": "Tilt-Neon.ttf",
-    "Prism": "Tilt-Prism.ttf",
-    "Warp": "Tilt-Warp.ttf"}
+    "Neon": "TiltNeon[XROT,YROT].ttf",
+    "Prism": "TiltPrism[XROT,YROT].ttf",
+    "Warp": "TiltWarp[XROT,YROT].ttf"}
     
 captionFontPath = baseFontPath + fontPaths["Warp"]
     
@@ -26,8 +26,8 @@ def interpolate(minimum,  maximum, factor):
     return minimum + (maximum - minimum) * factor 
        
 AXISINFO = {
-    "HROT": dict(name="Horizontal Rotation", minimum=-45, maximum=45, default=0),
-    "VROT": dict(name="Vertical Rotation", minimum=-45, maximum=45, default=0)}
+    "XROT": dict(name="Rotation in X", minimum=-45, maximum=45, default=0),
+    "YROT": dict(name="Rotation in Y", minimum=-45, maximum=45, default=0)}
     
 def drawSliders(varInfo, sliderWidth=300, sliderSpacing=80):
     # Measure the tag label
@@ -123,7 +123,7 @@ def drawPage(x, y, fontPath, duration=1/8):
     rect(0, 0, width(), height())
     with savedState():
         translate(width()*0.5, height()*0.85)
-        var = {"HROT":x, "VROT": y}
+        var = {"XROT":x, "YROT": y}
         drawText("Abc", fontPath, var=var)
     drawSliders(var)
     
